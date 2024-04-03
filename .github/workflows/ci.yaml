@@ -15,4 +15,3 @@ jobs:
       - run: go run math.go
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
-
