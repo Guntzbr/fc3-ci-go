@@ -1,8 +1,8 @@
 name: ci-golang-workflows-dev
-on: [push]
-#  push:
-#    branches:
-#      - develop
+#on: [push]
+  push:
+    branches:
+      - develop
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -15,3 +15,4 @@ jobs:
       - run: go run math.go
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
+
