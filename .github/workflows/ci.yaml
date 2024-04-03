@@ -1,8 +1,8 @@
 name: ci-golang-workflows-dev
 on:
-  pull_request:
+  push:
     branches:
-      - develop
+      - feature/ci
 jobs:
   check-application:
     runs-on: ubuntu-latest
