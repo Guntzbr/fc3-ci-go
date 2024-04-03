@@ -1,4 +1,5 @@
 name: ci-golang-workflows-dev
+on:
   pull_request:
     branches:
       - develop
